@@ -1,0 +1,18 @@
+<nav class="navbar fixed-top navbar-light bg-white">
+  <div class="container">
+    <div class="logo"></div>
+    <div class="add-post" data-toggle="modal" data-target="#exampleModal">
+
+      <a href="#" (click)="sair()" style="margin-left: 40px;">Sair</a>
+
+    </div>
+  </div>  
+</nav>
+
+<br /><br /><br />
+<div class="container">
+
+  <!-- Criando variavel de template para pegar o atributo do componente -->
+  <app-publicacoes #publicacoes></app-publicacoes>  
+  <app-incluir-publicacao (atualizarTimeLine)="atualizarTimeLine()"></app-incluir-publicacao>
+</div>
